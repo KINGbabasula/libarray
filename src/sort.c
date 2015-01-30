@@ -63,14 +63,15 @@ void order_sel(int v[], int len)
 
 void load_order(int v[], int len)
 {
-	int i, j, k, val, flag;
+	int i, j, k, val;
+	bool flag;
 
 	for(i = 0; i < len; i++)
 	{
 		printf("Insert value %d: ", i + 1);
 		scanf("%d", &val);
 
-		flag = 0;
+		flag = false;
 
 		if(i == 0)
 		{
@@ -78,18 +79,18 @@ void load_order(int v[], int len)
 			continue;
 		}
 
-		for(j = 0; j < i && flag == 0; j++)
+		for(j = 0; j < i && !flag; j++)
 		{
 			if(val <= v[j])
 			{
 				for(k = i; k >= j; k--)
 					v[k + 1] = v[k];
 				v[j] = val;
-				flag = 1;
+				flag = true;
 			}
 		}
 
-		if(flag == 0)
+		if(!flag)
 			v[i] = val;
 	}
 }
