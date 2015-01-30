@@ -41,6 +41,26 @@ void order_opt(int v[], int len)
 	while(flag);
 }
 
+void order_sel(int v[], int len)
+{
+	int i, j, min, pos;
+	
+	for(i = 0; i < len - 1; i++)
+	{
+		min = v[i];
+
+		for(j = i + 1; j < len; j++)
+		{
+			if(min > v[j])
+			{
+				pos = j;
+				min = v[j];
+			}
+		}
+		swap(&v[i], &v[pos]);
+	}
+}
+
 void load_order(int v[], int len)
 {
 	int i, j, k, val, flag;
