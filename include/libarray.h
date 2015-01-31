@@ -23,4 +23,4 @@ void invert_array(int v[], int len);
  * @param val value to delete
  * @return 0 if the value is deleted, 1 id the value is not found
  */
-int elimina_valore(int v[], int *len, int val);
+int delete_value(int v[], int *len, int val);

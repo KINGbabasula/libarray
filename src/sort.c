@@ -1,6 +1,6 @@
 #include "../include/libarray.h"
 
-void order(int v[], int len)
+void sort(int v[], int len)
 {
 	int i, j;
 
@@ -16,7 +16,7 @@ void order(int v[], int len)
 	}
 }
 
-void order_opt(int v[], int len)
+void sort_opt(int v[], int len)
 {
 	bool flag = false;
 	int k = len - 1, i, s;
@@ -41,7 +41,7 @@ void order_opt(int v[], int len)
 	while(flag);
 }
 
-void order_sel(int v[], int len)
+void sort_selection(int v[], int len)
 {
 	int i, j, min, pos;
 	
@@ -61,7 +61,7 @@ void order_sel(int v[], int len)
 	}
 }
 
-void load_order(int v[], int len)
+void load_sort(int v[], int len)
 {
 	int i, j, k, val;
 	bool flag;
