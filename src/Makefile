@@ -2,7 +2,7 @@ lib=libarray
 CC?=gcc
 AR?=ar
 OPT=-O2
-OBJ=libarray.o sort.o io.o
+OBJ=libarray.o sort.o io.o math.o
 
 .PHONY: build
 .PHONY: clean
@@ -22,4 +22,7 @@ sort.o: sort.c
 	$(CC) -c ${OPT} $<
 
 io.o: io.c
+	$(CC) -c ${OPT} $<
+
+math.o: math.c
 	$(CC) -c ${OPT} $<
