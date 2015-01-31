@@ -94,3 +94,25 @@ void load_order(int v[], int len)
 			v[i] = val;
 	}
 }
+
+void sort_recursive(int v[], int len, int start)
+{
+	int i = start, min, pos;
+
+	if(start >= len - 1)
+		return;
+
+	min = v[i];
+		
+	for(i = start + 1; i < len; i++)
+	{
+		if(min > v[i])
+		{
+			pos = i;
+			min = v[i];
+		}
+	}
+	swap(&v[start], &v[pos]);
+	
+	sort_recursive(v, len, start + 1);
+}

@@ -26,3 +26,11 @@ void order_sel(int v[], int len);
  * @param len array logic lenght
  */
 void load_order(int v[], int len);
+
+/**
+ * Reorders values recursively
+ * @param v[] array that is getting reordered
+ * @param len array logic lenght
+ * @param start position where to start reordering
+ */
+void sort_recursive(int v[], int len, int start);
