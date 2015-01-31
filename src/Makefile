@@ -1,7 +1,7 @@
 lib=libarray
 CC?=gcc
 AR?=ar
-OPT=-O2 ${CFLAGS}
+OPT=-O2
 OBJ=libarray.o sort.o io.o
 
 .PHONY: build
