@@ -1,6 +1,6 @@
 #include "../include/libarray.h"
 
-void sort(int v[], int len)
+void bubble_sort(int v[], int len)
 {
 	int i, j;
 
@@ -16,7 +16,7 @@ void sort(int v[], int len)
 	}
 }
 
-void sort_opt(int v[], int len)
+void bubble_sort_opt(int v[], int len)
 {
 	bool flag;
 	int k = len - 1, i, s;
@@ -41,7 +41,7 @@ void sort_opt(int v[], int len)
 	while(flag);
 }
 
-void sort_selection(int v[], int len)
+void selection_sort(int v[], int len)
 {
 	int i, j, min, pos;
 	

@@ -4,21 +4,21 @@
  * @param v[] array that is getting reordered
  * @param len array logic lenght
  */
-void sort(int v[], int len);
+void bubble_sort(int v[], int len);
 
 /**
  * Reorders values faster
  * @param v[] array that is getting reordered
  * @param len array logic lenght
  */
-void sort_opt(int v[], int len);
+void bubble_sort_opt(int v[], int len);
 
 /**
  * Reorders values searching for minimum and swapping it with the index position value
  * @param v[] array that is getting reordered
  * @param len array logic lenght
  */
-void sort_selection(int v[], int len);
+void selection_sort(int v[], int len);
 
 /**
  * Asks for values from keyboard to fill the array and reorders at the same time
