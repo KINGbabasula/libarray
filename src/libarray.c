@@ -15,7 +15,6 @@ void invert_array(int v[], int len)
 int delete_value(int v[], int *len, int val)
 {
 	int i, j;
-	bool del = false;
 
 	for(i = 0; i < *len; i++)
 	{
@@ -24,17 +23,9 @@ int delete_value(int v[], int *len, int val)
 			for(j = i; j < *len - 1; j++)
 				v[j] = v[j + 1];
 
-			del = true;
+			(*len)--;
+			return 0;
 		}
 	}
-
-	if(del)
-	{
-		(*len)--;
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
+	return 1;
 }
