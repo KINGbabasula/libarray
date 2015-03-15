@@ -18,7 +18,7 @@ void sort(int v[], int len)
 
 void sort_opt(int v[], int len)
 {
-	bool flag = false;
+	bool flag;
 	int k = len - 1, i, s;
 
 	do
