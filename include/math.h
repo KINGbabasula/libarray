@@ -21,3 +21,11 @@ float average(int v[], int len);
  * @return max value found, -1 if array has less than 2 elements
  */
 int max_val(int v[], int len);
+
+/**
+ * Finds the minimum value in the array
+ * @param v[] array where it searches for the max value
+ * @param len dim array logic lenght
+ * @return min value found, -1 if array has less than 2 elements
+ */
+int min_val(int v[], int len);

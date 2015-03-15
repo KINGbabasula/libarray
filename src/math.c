@@ -29,10 +29,24 @@ int max_val(int v[], int len)
 	max = v[0];
 
 	for(i = 1; i < len; i++)
-	{
 		if(v[i] > max)
 			max = v[i];
-	}
 
 	return max;
+}
+
+int min_val(int v[], int len)
+{
+	int i, min;
+
+	if(len < 2)
+		return -1;
+
+	min = v[0];
+
+	for(i = 1; i < len; i++)
+		if(v[i] < min)
+			min = v[i];
+
+	return min;
 }
